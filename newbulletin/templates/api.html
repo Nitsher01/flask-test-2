@@ -1,0 +1,11 @@
+{% for post in posts %}
+        &emsp;{<br>
+	        	&emsp;&emsp;&emsp;"id" : {{post.id}},<br>
+	        	&emsp;&emsp;&emsp;"headline": {{post.headline}} ,<br>
+	        	&emsp;&emsp;&emsp;"publisher": {{post.publisher}},<br>
+	        	&emsp;&emsp;&emsp;"something": {{post.something}},<br>
+	        	&emsp;&emsp;&emsp;"main_site": {{post.main_site}}",<br>
+	        	&emsp;&emsp;&emsp;"date": {{post.some_number}}<br>
+        &emsp;},<br>
+        <br>
+{% endfor %}

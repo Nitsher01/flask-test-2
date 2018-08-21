@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              By <a class="mr-2" href="{{post.main_site}}" target="_blank" style="font-family: 'Roboto Slab', serif">{{ post['publisher'] }}</a>
+            </div>
+            <h3><a class="article-title" href="{{post.link}}" target="_blank" style="font-family: 'Roboto Slab', serif">{{ post['headline'] }}</a></h3>
+              <p class="mb-1 text-right"><a class="article-title" href="{{post.link}}" target="_blank" style="font-family: 'Roboto Slab', serif">- Read Full Article Here</a></p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
